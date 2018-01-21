@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Wakify</string>
+    <string name="help_text">This app plays Spotify from current paused state at the time of alarm. Alarm would run at the volume you have set for media on the device. On the alarm icon, swipe left to snooze alarm and right to switch it off.</string>
+</resources>

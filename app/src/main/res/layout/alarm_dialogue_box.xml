@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repeat_palet"
+        android:orientation="horizontal"
+        android:layout_below="@+id/timePicker">
+        <RadioButton android:id="@+id/buttonNever"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Never"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <RadioButton android:id="@+id/buttonEveryday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everyday"
+            android:button="@null"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <RadioButton android:id="@+id/buttonWeekdays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekdays"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <RadioButton android:id="@+id/buttonWeekdends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekends"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textAlignment="center"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/repeat_palet"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp">
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:background="@color/black"
+        android:textColor="@color/textColorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginRight="1dp"/>
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@color/black"
+        android:textColor="@color/textColorPrimary"/>
+</LinearLayout>
+
+
+
+</RelativeLayout>

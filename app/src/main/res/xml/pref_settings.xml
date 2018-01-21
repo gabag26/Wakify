@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="snooze_time"
+        android:title="Snooze"
+        android:entries="@array/SnoozeOptions"
+        android:entryValues="@array/SnoozeOptionsValues"
+        android:summary="%s"/>
+
+    <CheckBoxPreference
+        android:key="vibrate"
+        android:title="Vibrate"
+        android:summaryOn="On"
+        android:summaryOff="Off"
+        android:defaultValue="false"/>
+
+</PreferenceScreen>
